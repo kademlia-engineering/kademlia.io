@@ -8,6 +8,8 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface AppRoot {
     }
+    interface LogoToken {
+    }
     interface PageHome {
     }
 }
@@ -18,6 +20,12 @@ declare global {
         prototype: HTMLAppRootElement;
         new (): HTMLAppRootElement;
     };
+    interface HTMLLogoTokenElement extends Components.LogoToken, HTMLStencilElement {
+    }
+    var HTMLLogoTokenElement: {
+        prototype: HTMLLogoTokenElement;
+        new (): HTMLLogoTokenElement;
+    };
     interface HTMLPageHomeElement extends Components.PageHome, HTMLStencilElement {
     }
     var HTMLPageHomeElement: {
@@ -26,16 +34,20 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "app-root": HTMLAppRootElement;
+        "logo-token": HTMLLogoTokenElement;
         "page-home": HTMLPageHomeElement;
     }
 }
 declare namespace LocalJSX {
     interface AppRoot {
     }
+    interface LogoToken {
+    }
     interface PageHome {
     }
     interface IntrinsicElements {
         "app-root": AppRoot;
+        "logo-token": LogoToken;
         "page-home": PageHome;
     }
 }
@@ -44,6 +56,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+            "logo-token": LocalJSX.LogoToken & JSXBase.HTMLAttributes<HTMLLogoTokenElement>;
             "page-home": LocalJSX.PageHome & JSXBase.HTMLAttributes<HTMLPageHomeElement>;
         }
     }

@@ -14,10 +14,14 @@
     "@ionic/core": "^7.0.9",
     "@stencil/core": "^3.3.0",
     "@types/jest": "~27.0.3",
+    "@types/webxr": "^0.5.15",
     "ionicons": "^7.1.1",
     "jest": "~27.0.3",
     "jest-cli": "~27.4.5",
     "puppeteer": "^20.4.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@google/model-viewer": "^3.4.0"
+  }
 }

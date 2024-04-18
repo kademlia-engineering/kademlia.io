@@ -1,0 +1,16 @@
+/* logo-token.css */
+:host {
+    display: block; /* Change this to 'inline-block' if you prefer */
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; /* Ensure it's above other content */
+    width: 200px; /* Set the width of the token */
+    height: 200px; /* Set the height of the token */
+}
+
+model-viewer {
+    width: 100%; /* Take full width of the host */
+    height: 100%; /* Take full height of the host */
+}

@@ -10,20 +10,12 @@ export class PageHome {
     return (
       <Fragment>
         <ion-header>
-          <ion-toolbar color="primary">
-            <logo-token></logo-token>
+          <ion-toolbar color="secondary">
+            kademlia
           </ion-toolbar>
         </ion-header>
         <ion-content class="ion-padding" color="primary">
-          <p>Welcome to Stencil App Starter.</p>
-          <ion-list>
-            <ion-item>
-              <ion-label>Item 1</ion-label>
-            </ion-item>
-            <ion-item>
-              <ion-label>Item 2</ion-label>
-            </ion-item>
-          </ion-list>
+          <logo-token src="token-icon"></logo-token>
         </ion-content>
       </Fragment>
     );

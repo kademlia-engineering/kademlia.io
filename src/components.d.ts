@@ -9,6 +9,7 @@ export namespace Components {
     interface AppRoot {
     }
     interface LogoToken {
+        "src": string;
     }
     interface PageHome {
     }
@@ -42,6 +43,7 @@ declare namespace LocalJSX {
     interface AppRoot {
     }
     interface LogoToken {
+        "src"?: string;
     }
     interface PageHome {
     }

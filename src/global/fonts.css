@@ -1,0 +1,71 @@
+/* Ubuntu-Bold */
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Ubuntu Bold'), local('Ubuntu-Bold'),
+        url('/assets/fonts/Ubuntu/Ubuntu-Bold.ttf') format('truetype');
+}
+
+/* Ubuntu-Regular */
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Ubuntu Regular'), local('Ubuntu-Regular'),
+        url('/assets/fonts/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+}
+
+/* LeagueSpartan-Bold */
+@font-face {
+    font-family: 'LeagueSpartan';
+    font-style: normal;
+    font-weight: bold;
+    src: local('LeagueSpartan Bold'), local('LeagueSpartan-Bold'),
+        url('assets/fonts/League_Spartan/static/LeagueSpartan-ExtraBold.ttf') format('truetype');
+}
+
+/* LeagueSpartan-Regular */
+@font-face {
+    font-family: 'LeagueSpartan';
+    font-style: normal;
+    font-weight: normal;
+    src: local('LeagueSpartan Regular'), local('LeagueSpartan-Regular'),
+        url('assets/fonts/League_Spartan/static/LeagueSpartan-Bold.ttf') format('truetype');
+}
+
+/* AROneSans-Bold */
+@font-face {
+    font-family: 'AROneSans';
+    font-style: normal;
+    font-weight: bold;
+    src: local('AROneSans Bold'), local('AROneSans-Bold'),
+        url('assets/fonts/AR_One_Sans/static/AROneSans-Bold.ttf') format('truetype');
+}
+
+/* AROneSans-Regular */
+@font-face {
+    font-family: 'AROneSans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('AROneSans Regular'), local('AROneSans-Regular'),
+        url('assets/fonts/AR_One_Sans/static/AROneSans-SemiBold.ttf') format('truetype');
+}
+
+/* Global CSS variables for font settings */
+:root {
+    /* Font family definitions */
+    --primary-font: 'Ubuntu', sans-serif;
+    --secondary-font: 'LeagueSpartan', sans-serif;
+    --tertiary-font: 'AROneSans', sans-serif;
+
+    /* Font weight configurations */
+    --font-weight-bold: bold;
+    --font-weight-regular: normal;
+
+    /* Font sizes for different contexts */
+    --font-size-primary: 32px; /* Default font size for body text */
+    --font-size-secondary: 18px; /* Slightly smaller font size for secondary text */
+    --font-size-heading: 64px; /* Larger font size for headings */
+    --font-size-small: 14px; /* Smaller font size for less important text */
+}

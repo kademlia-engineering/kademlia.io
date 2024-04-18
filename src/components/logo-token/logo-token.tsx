@@ -1,4 +1,4 @@
-import { Component, h } from '@stencil/core';
+import { Component, Prop, h } from '@stencil/core';
 import '@google/model-viewer';
 
 @Component({
@@ -7,19 +7,18 @@ import '@google/model-viewer';
   shadow: true,
 })
 export class LogoToken {
+  @Prop() src: string;
+
   render() {
+    const filePath = `assets/3d/${this.src}.glb`;
     return (
-      <div class="falling-element">
-        <model-viewer
-          src="assets/3d/token-icon.glb"
-          class="falling-element"
-          alt="icon-symbol 3d object"
-          auto-rotate
-          camera-controls
-          ar
-        ></model-viewer>
-      </div>
+      <model-viewer
+        src={filePath}
+        alt="3d object"
+        auto-rotate
+        camera-controls
+        ar
+      ></model-viewer>
     );
   }
-
 }

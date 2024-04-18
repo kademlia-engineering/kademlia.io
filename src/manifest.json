@@ -1,6 +1,6 @@
 {
-  "name": "Stencil Starter",
-  "short_name": "Stencil",
+  "name": "kademlia landing page",
+  "short_name": "kademlia",
   "start_url": "/",
   "display": "standalone",
   "icons": [{

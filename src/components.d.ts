@@ -13,6 +13,10 @@ export namespace Components {
     }
     interface PageHome {
     }
+    interface PageLoading {
+    }
+    interface ScrollPage {
+    }
 }
 declare global {
     interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {
@@ -33,10 +37,24 @@ declare global {
         prototype: HTMLPageHomeElement;
         new (): HTMLPageHomeElement;
     };
+    interface HTMLPageLoadingElement extends Components.PageLoading, HTMLStencilElement {
+    }
+    var HTMLPageLoadingElement: {
+        prototype: HTMLPageLoadingElement;
+        new (): HTMLPageLoadingElement;
+    };
+    interface HTMLScrollPageElement extends Components.ScrollPage, HTMLStencilElement {
+    }
+    var HTMLScrollPageElement: {
+        prototype: HTMLScrollPageElement;
+        new (): HTMLScrollPageElement;
+    };
     interface HTMLElementTagNameMap {
         "app-root": HTMLAppRootElement;
         "logo-token": HTMLLogoTokenElement;
         "page-home": HTMLPageHomeElement;
+        "page-loading": HTMLPageLoadingElement;
+        "scroll-page": HTMLScrollPageElement;
     }
 }
 declare namespace LocalJSX {
@@ -47,10 +65,16 @@ declare namespace LocalJSX {
     }
     interface PageHome {
     }
+    interface PageLoading {
+    }
+    interface ScrollPage {
+    }
     interface IntrinsicElements {
         "app-root": AppRoot;
         "logo-token": LogoToken;
         "page-home": PageHome;
+        "page-loading": PageLoading;
+        "scroll-page": ScrollPage;
     }
 }
 export { LocalJSX as JSX };
@@ -60,6 +84,8 @@ declare module "@stencil/core" {
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
             "logo-token": LocalJSX.LogoToken & JSXBase.HTMLAttributes<HTMLLogoTokenElement>;
             "page-home": LocalJSX.PageHome & JSXBase.HTMLAttributes<HTMLPageHomeElement>;
+            "page-loading": LocalJSX.PageLoading & JSXBase.HTMLAttributes<HTMLPageLoadingElement>;
+            "scroll-page": LocalJSX.ScrollPage & JSXBase.HTMLAttributes<HTMLScrollPageElement>;
         }
     }
 }

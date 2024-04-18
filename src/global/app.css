@@ -38,5 +38,6 @@
   https://ionicframework.com/docs/theming/color-generator
 */
 
-@import './variables.css';
-@import 'fonts.css';
+@import './css/variables.css';
+@import './css/fonts.css';
+@import './css/utils.css';

@@ -9,13 +9,19 @@ export class PageHome {
   render() {
     return (
       <Fragment>
-        <ion-header>
-          <ion-toolbar color="secondary">
-            kademlia
-          </ion-toolbar>
-        </ion-header>
-        <ion-content class="ion-padding" color="primary">
+        <ion-content class="ion-padding">
+          kademlia
           <logo-token src="token-icon"></logo-token>
+          <section>Section 1</section>
+          <section>Section 1</section>
+          <section>Section 1</section>
+          <section>Section 1</section>
+          <section>Section 1</section>
+          <section>Section 1</section>
+          <section>Section 1</section>
+          <section>Section 1</section>
+          <section>Section 1</section>
+          <section>Section 1</section>
         </ion-content>
       </Fragment>
     );

@@ -1,0 +1,21 @@
+:host {
+  display: block; /* Change this to 'inline-block' if you prefer */
+  position: fixed;
+  top: 3%;
+  left: 10%;
+  background-color: transparent;
+  border: none;
+  transform: translateX(-50%);
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+button {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-heading);
+  font-family: var(--primary-font);
+  background: transparent;
+  border: none;
+  color: var(--ion-color-secondary); /* Adjust the text color based on your needs */
+  font-size: 64px;
+  cursor: pointer;
+}

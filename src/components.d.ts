@@ -8,14 +8,15 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface AppRoot {
     }
+    interface HomeButton {
+        "text": string;
+    }
     interface LogoToken {
         "src": string;
     }
     interface PageHome {
     }
     interface PageLoading {
-    }
-    interface ScrollPage {
     }
 }
 declare global {
@@ -24,6 +25,12 @@ declare global {
     var HTMLAppRootElement: {
         prototype: HTMLAppRootElement;
         new (): HTMLAppRootElement;
+    };
+    interface HTMLHomeButtonElement extends Components.HomeButton, HTMLStencilElement {
+    }
+    var HTMLHomeButtonElement: {
+        prototype: HTMLHomeButtonElement;
+        new (): HTMLHomeButtonElement;
     };
     interface HTMLLogoTokenElement extends Components.LogoToken, HTMLStencilElement {
     }
@@ -43,22 +50,19 @@ declare global {
         prototype: HTMLPageLoadingElement;
         new (): HTMLPageLoadingElement;
     };
-    interface HTMLScrollPageElement extends Components.ScrollPage, HTMLStencilElement {
-    }
-    var HTMLScrollPageElement: {
-        prototype: HTMLScrollPageElement;
-        new (): HTMLScrollPageElement;
-    };
     interface HTMLElementTagNameMap {
         "app-root": HTMLAppRootElement;
+        "home-button": HTMLHomeButtonElement;
         "logo-token": HTMLLogoTokenElement;
         "page-home": HTMLPageHomeElement;
         "page-loading": HTMLPageLoadingElement;
-        "scroll-page": HTMLScrollPageElement;
     }
 }
 declare namespace LocalJSX {
     interface AppRoot {
+    }
+    interface HomeButton {
+        "text"?: string;
     }
     interface LogoToken {
         "src"?: string;
@@ -67,14 +71,12 @@ declare namespace LocalJSX {
     }
     interface PageLoading {
     }
-    interface ScrollPage {
-    }
     interface IntrinsicElements {
         "app-root": AppRoot;
+        "home-button": HomeButton;
         "logo-token": LogoToken;
         "page-home": PageHome;
         "page-loading": PageLoading;
-        "scroll-page": ScrollPage;
     }
 }
 export { LocalJSX as JSX };
@@ -82,10 +84,10 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+            "home-button": LocalJSX.HomeButton & JSXBase.HTMLAttributes<HTMLHomeButtonElement>;
             "logo-token": LocalJSX.LogoToken & JSXBase.HTMLAttributes<HTMLLogoTokenElement>;
             "page-home": LocalJSX.PageHome & JSXBase.HTMLAttributes<HTMLPageHomeElement>;
             "page-loading": LocalJSX.PageLoading & JSXBase.HTMLAttributes<HTMLPageLoadingElement>;
-            "scroll-page": LocalJSX.ScrollPage & JSXBase.HTMLAttributes<HTMLScrollPageElement>;
         }
     }
 }

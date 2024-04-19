@@ -10,7 +10,7 @@ export class PageHome {
     return (
       <Fragment>
         <ion-content class="ion-padding">
-          kademlia
+          <home-button text="kademlia"></home-button>
           <logo-token src="token-icon"></logo-token>
           <section>Section 1</section>
           <section>Section 1</section>

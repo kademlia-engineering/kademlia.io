@@ -13,7 +13,7 @@ export class AppRoot {
       // Trigger the change in state after a slight delay to ensure the animation is visible
       setTimeout(() => {
         this.appLoaded = true;
-      }, 1000); // Delay can be adjusted or removed as per your requirement
+      }, 9000); // Delay can be adjusted or removed as per your requirement
     });
   }
 
@@ -21,7 +21,9 @@ export class AppRoot {
     return (
       <ion-app>
         {!this.appLoaded ? (
-          <page-loading></page-loading>
+          <ion-content>
+            <page-loading></page-loading>
+          </ion-content>
         ) : (
           <ion-content>
             <ion-router useHash={false}>

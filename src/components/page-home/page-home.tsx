@@ -11,7 +11,7 @@ export class PageHome {
       <Fragment>
         <ion-content class="ion-padding">
           <home-button text="kademlia"></home-button>
-          <logo-token src="token-icon"></logo-token>
+          <logo-token src="token-icon" rotationPerSecond="45deg"></logo-token>
           <section>Section 1</section>
           <section>Section 1</section>
           <section>Section 1</section>

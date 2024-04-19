@@ -12,6 +12,7 @@ export namespace Components {
         "text": string;
     }
     interface LogoToken {
+        "rotationPerSecond": string;
         "src": string;
     }
     interface PageHome {
@@ -65,6 +66,7 @@ declare namespace LocalJSX {
         "text"?: string;
     }
     interface LogoToken {
+        "rotationPerSecond"?: string;
         "src"?: string;
     }
     interface PageHome {

@@ -1,4 +1,5 @@
-import { Component, Fragment, h } from '@stencil/core';
+import { Component, h } from '@stencil/core';
+import '@google/model-viewer';
 
 @Component({
   tag: 'page-loading',
@@ -8,11 +9,17 @@ import { Component, Fragment, h } from '@stencil/core';
 export class PageLoading {
   render() {
     return (
-      <Fragment>
-        <ion-content class="ion-padding" color="primary">
-          kad
-        </ion-content>
-      </Fragment>
+      <div>
+        <model-viewer
+          src="assets/3d/boxlogo.glb"
+          alt="3d object"
+          auto-rotate
+          ar
+          camera-controls
+          rotation-per-second="90deg"
+        ></model-viewer>
+        {/*<img class="image" src="/assets/icon/icon.png" alt="Logo" />*/}
+      </div>
     );
   }
 }

@@ -8,6 +8,7 @@ import '@google/model-viewer';
 })
 export class LogoToken {
   @Prop() src: string;
+  @Prop() rotationPerSecond: string;
 
   render() {
     const filePath = `assets/3d/${this.src}.glb`;
@@ -18,6 +19,7 @@ export class LogoToken {
         auto-rotate
         camera-controls
         ar
+        rotation-per-second={this.rotationPerSecond}
       ></model-viewer>
     );
   }

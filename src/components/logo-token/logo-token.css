@@ -11,6 +11,16 @@
 }
 
 model-viewer {
+    animation: fadeIn 1s;
     width: 100%; /* Take full width of the host */
     height: 100%; /* Take full height of the host */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

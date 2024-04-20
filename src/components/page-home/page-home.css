@@ -19,21 +19,3 @@ section {
     align-items: center;
     margin: 0; /* Ensure no default margins are interfering */
 }
-
-ion-footer {
-    text-align: center;    /* Center-align the text */
-    padding: 20px;         /* Padding for spacing inside the footer */
-    position: relative;    /* Relative positioning */
-    bottom: 0;             /* Positions at the bottom */
-    width: 100%;           /* Full width of the viewport */
-}
-
-ion-toolbar {
-    --background: transparent; /* Dark background for the footer */
-    --color: var(--ion-color-primary);          /* Light text color for contrast */
-    font-weight: var(--font-weight-bold);
-    font-family: var(--primary-font);
-    display: flex;        /* Enables flexbox */
-    justify-content: space-between; /* Distributes space between titles */
-    justify-content: space-around; /* Adjusts the spacing around items */
-}

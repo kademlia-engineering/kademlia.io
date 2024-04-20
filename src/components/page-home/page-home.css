@@ -1,11 +1,21 @@
-ion-content::part(scroll) {
-    height: 100vh;
+/* In page-home.css */
+content {
+    --background: linear-gradient(to bottom, var(--ion-color-primary), var(--ion-color-secondary));
+    --color: var(--ion-color-secondary);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-heading);
+    font-family: var(--primary-font);
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    height: 100vh; /* Ensure this is strictly followed */
+    overflow-y: auto; /* Explicitly set the overflow for clarity */
 }
 
 section {
     height: 100vh;
-    scroll-snap-align: start;
+    /*scroll-snap-align: start;*/
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0; /* Ensure no default margins are interfering */
 }

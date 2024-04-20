@@ -15,10 +15,8 @@ export class PageLoading {
           alt="3d object"
           auto-rotate
           ar
-          camera-controls
           rotation-per-second="90deg"
         ></model-viewer>
-        {/*<img class="image" src="/assets/icon/icon.png" alt="Logo" />*/}
       </div>
     );
   }

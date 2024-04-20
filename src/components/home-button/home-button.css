@@ -1,8 +1,8 @@
 :host {
   display: block; /* Change this to 'inline-block' if you prefer */
   position: fixed;
-  top: 3%;
-  left: 10%;
+  top: 3vh;
+  left: 20vh;
   background-color: transparent;
   border: none;
   transform: translateX(-50%);

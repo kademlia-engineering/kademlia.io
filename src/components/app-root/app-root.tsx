@@ -20,11 +20,10 @@ export class AppRoot {
   render() {
     return (
       <ion-app>
-        {/*!this.appLoaded ? (
+        {!this.appLoaded ? (
           <ion-content>
-            <page-loading></page-loading>
           </ion-content>
-        ) : */(
+        ) : (
           <ion-content>
             <ion-router useHash={false}>
               <ion-route-redirect from="/" to="/home"></ion-route-redirect>

@@ -64,7 +64,7 @@ export class PageHome {
           {this.showContent && (
             <Fragment>
               <home-button text="kademlia"></home-button>
-              <logo-token src="token-icon" rotationPerSecond="45deg"></logo-token>
+              {/*<logo-token src="token-icon" rotationPerSecond="45deg"></logo-token>*/}
             </Fragment>
           )}
           <section>Section 1</section>
@@ -81,53 +81,5 @@ export class PageHome {
 
 
 /*
-import { Component, Fragment, h, State, Listen } from '@stencil/core';
 
-@Component({
-  tag: 'page-home',
-  styleUrl: 'page-home.css',
-  shadow: true,
-})
-export class PageHome {
-  @State() isLoading: boolean = true;
-
-  @Listen('scroll', { target: 'window' })
-  handleScroll() {
-    console.log("scroll");
-    this.toggleLoading();
-  }
-
-  toggleLoading() {
-    this.isLoading = !this.isLoading;
-  }
-
-  render() {
-    return (
-      <Fragment>
-        <content>
-          {!this.isLoading ? (
-            <Fragment>
-              <home-button text="kademlia"></home-button>
-              <logo-token src="token-icon" rotationPerSecond="45deg"></logo-token>
-            </Fragment>
-          ) : (
-            <section>
-              <page-loading></page-loading>
-            </section>
-          )}
-          <section>Section 1</section>
-          <section>Section 1</section>
-          <section>Section 1</section>
-          <section>Section 1</section>
-          <section>Section 1</section>
-          <section>Section 1</section>
-          <section>Section 1</section>
-          <section>Section 1</section>
-          <section>Section 1</section>
-          <section>Section 1</section>
-        </content>
-      </Fragment>
-    );
-  }
-}
 */

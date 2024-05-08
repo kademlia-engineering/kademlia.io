@@ -1,0 +1,29 @@
+/* bouldin-card.css */
+ion-card {
+  max-width: 25%;
+  box-sizing: border-box;
+  --background: #500000;
+  --color: var(--ion-color-primary);
+  animation: moveLeft 1s linear forwards;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 125px;
+}
+
+model-viewer {
+  width: 100%;
+  height: 300px;
+}
+
+h1 {
+  font-size: var(--font-size-primary);
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(180%);
+  }
+}

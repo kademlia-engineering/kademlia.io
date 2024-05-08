@@ -6,7 +6,13 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface AboutUsCard {
+    }
     interface AppRoot {
+    }
+    interface BouldinCard {
+    }
+    interface FreeGameCard {
     }
     interface HomeButton {
         "text": string;
@@ -19,13 +25,33 @@ export namespace Components {
     }
     interface PageLoading {
     }
+    interface ZilkerCard {
+    }
 }
 declare global {
+    interface HTMLAboutUsCardElement extends Components.AboutUsCard, HTMLStencilElement {
+    }
+    var HTMLAboutUsCardElement: {
+        prototype: HTMLAboutUsCardElement;
+        new (): HTMLAboutUsCardElement;
+    };
     interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {
     }
     var HTMLAppRootElement: {
         prototype: HTMLAppRootElement;
         new (): HTMLAppRootElement;
+    };
+    interface HTMLBouldinCardElement extends Components.BouldinCard, HTMLStencilElement {
+    }
+    var HTMLBouldinCardElement: {
+        prototype: HTMLBouldinCardElement;
+        new (): HTMLBouldinCardElement;
+    };
+    interface HTMLFreeGameCardElement extends Components.FreeGameCard, HTMLStencilElement {
+    }
+    var HTMLFreeGameCardElement: {
+        prototype: HTMLFreeGameCardElement;
+        new (): HTMLFreeGameCardElement;
     };
     interface HTMLHomeButtonElement extends Components.HomeButton, HTMLStencilElement {
     }
@@ -51,16 +77,32 @@ declare global {
         prototype: HTMLPageLoadingElement;
         new (): HTMLPageLoadingElement;
     };
+    interface HTMLZilkerCardElement extends Components.ZilkerCard, HTMLStencilElement {
+    }
+    var HTMLZilkerCardElement: {
+        prototype: HTMLZilkerCardElement;
+        new (): HTMLZilkerCardElement;
+    };
     interface HTMLElementTagNameMap {
+        "about-us-card": HTMLAboutUsCardElement;
         "app-root": HTMLAppRootElement;
+        "bouldin-card": HTMLBouldinCardElement;
+        "free-game-card": HTMLFreeGameCardElement;
         "home-button": HTMLHomeButtonElement;
         "logo-token": HTMLLogoTokenElement;
         "page-home": HTMLPageHomeElement;
         "page-loading": HTMLPageLoadingElement;
+        "zilker-card": HTMLZilkerCardElement;
     }
 }
 declare namespace LocalJSX {
+    interface AboutUsCard {
+    }
     interface AppRoot {
+    }
+    interface BouldinCard {
+    }
+    interface FreeGameCard {
     }
     interface HomeButton {
         "text"?: string;
@@ -73,23 +115,33 @@ declare namespace LocalJSX {
     }
     interface PageLoading {
     }
+    interface ZilkerCard {
+    }
     interface IntrinsicElements {
+        "about-us-card": AboutUsCard;
         "app-root": AppRoot;
+        "bouldin-card": BouldinCard;
+        "free-game-card": FreeGameCard;
         "home-button": HomeButton;
         "logo-token": LogoToken;
         "page-home": PageHome;
         "page-loading": PageLoading;
+        "zilker-card": ZilkerCard;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "about-us-card": LocalJSX.AboutUsCard & JSXBase.HTMLAttributes<HTMLAboutUsCardElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+            "bouldin-card": LocalJSX.BouldinCard & JSXBase.HTMLAttributes<HTMLBouldinCardElement>;
+            "free-game-card": LocalJSX.FreeGameCard & JSXBase.HTMLAttributes<HTMLFreeGameCardElement>;
             "home-button": LocalJSX.HomeButton & JSXBase.HTMLAttributes<HTMLHomeButtonElement>;
             "logo-token": LocalJSX.LogoToken & JSXBase.HTMLAttributes<HTMLLogoTokenElement>;
             "page-home": LocalJSX.PageHome & JSXBase.HTMLAttributes<HTMLPageHomeElement>;
             "page-loading": LocalJSX.PageLoading & JSXBase.HTMLAttributes<HTMLPageLoadingElement>;
+            "zilker-card": LocalJSX.ZilkerCard & JSXBase.HTMLAttributes<HTMLZilkerCardElement>;
         }
     }
 }

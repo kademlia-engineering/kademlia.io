@@ -1,0 +1,25 @@
+/* zilker-card.css */
+ion-card {
+  max-width: 25%;
+  box-sizing: border-box;
+  --background: var(--ion-color-secondary);
+  --color: var(--ion-color-primary);
+  animation: moveRight 1s linear forwards;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 125px;
+}
+
+model-viewer {
+  width: 100%;
+  height: 300px;
+}
+
+h1 {
+  font-size: var(--font-size-primary);
+}
+
+@keyframes moveRight {
+  0% { left: 0; }
+  100% { left: calc(100% - 27%); }
+}

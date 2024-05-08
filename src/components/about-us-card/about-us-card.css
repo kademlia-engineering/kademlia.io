@@ -1,0 +1,26 @@
+/* about-us-card.css */
+ion-card {
+  max-width: 40%;
+  height: 200px;
+  box-sizing: border-box;
+  --background: #6f0017;
+  --color: var(--ion-color-primary);
+  animation: moveLeft 1s linear forwards;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 125px;
+}
+
+h1 {
+  font-size: var(--font-size-primary);
+  margin: 20px;
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(5%);
+  }
+}

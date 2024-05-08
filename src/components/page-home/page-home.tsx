@@ -67,19 +67,19 @@ export class PageHome {
               {/*<logo-token src="token-icon" rotationPerSecond="45deg"></logo-token>*/}
             </Fragment>
           )}
-          <section>Section 1</section>
-          <section>Section 2</section>
-          <section>Section 2</section>
-          <section>Section 2</section>
+          <section></section>
+          <section></section>
+          <zilker-card></zilker-card>
+          <section></section>
+          <bouldin-card></bouldin-card>
+          <section></section>
+          <about-us-card></about-us-card>
+          <section></section>
+          <free-game-card></free-game-card>
+          <section></section>
+          <section></section>
         </content>
       </Fragment>
     );
   }
 }
-
-
-
-
-/*
-
-*/
